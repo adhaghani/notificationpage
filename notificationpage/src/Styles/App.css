@@ -1,0 +1,46 @@
+.App {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.App .Container {
+  background-color: var(--bg_colour_white);
+  padding: var(--padding_l);
+  border-radius: var(--border_rad_12);
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+}
+.App .Container .Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: calc(1.5 * var(--mg_l));
+}
+.App .Container .Header .Header__Title {
+  display: flex;
+  align-items: center;
+  gap: var(--gap_l);
+}
+.App .Container .Header .Header__Title h2 {
+  padding: 3px 0px;
+  font-size: var(--font_size_l);
+}
+.App .Container .Header .Header__Title .Unread__Notifications {
+  padding: 3px 10px;
+  background-color: var(--bg_colour_dkblue);
+  color: var(--bg_colour_white);
+  border-radius: var(--border_rad_12);
+}
+.App .Container .Header .Header__Actions button {
+  font-size: var(--font_size_sm);
+  opacity: 0.7;
+  cursor: pointer;
+}
+.App .Container .Header .Header__Actions button:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 500px) {
+  .App {
+    background-color: var(--bg_colour_white);
+  }
+}/*# sourceMappingURL=App.css.map */

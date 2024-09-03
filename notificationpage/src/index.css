@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Jakarta Sans";
+  src: url(/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Jakarta Sans", sans-serif;
+  cursor: default;
+}
+
+:root {
+  --bg_colour_primary: #f9fafe;
+  --bg_colour_white: #fff;
+  --bg_colour_lblue: #f6fafd;
+  --bg_colour_blue: #002068;
+  --bg_colour_dkblue: #003087;
+
+  --border_rad_12: 12px;
+  --border-rad_6: 6px;
+
+  --gap_l: 20px;
+  --gap_md: 15px;
+  --gap_sm: 10px;
+
+  --mg_l: 20px;
+  --mg_md: 15px;
+  --mg_sm: 10px;
+
+  --padding_l: 20px;
+  --padding_md: 15px;
+  --padding_sm: 10px;
+
+  --font_size_l: clamp(18px, 5vw, 24px);
+  --font_size_md: clamp(16px, 4vw, 18px);
+  --font_size_sm: clamp(14px, 3vw, 16px);
+  --font_size_xs: clamp(12px, 3vw, 14px);
+
+  --font_extrabold: 700;
+  --font_bold: 600;
+  --font_normal: 500;
+
+  --width_container: clamp(300px, 100%, 720px);
+}
+
+body {
+  background-color: #f9fafe;
+}
+
+.Container {
+  width: var(--width_container);
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-color: var(--bg_colour_white);
+  }
+}

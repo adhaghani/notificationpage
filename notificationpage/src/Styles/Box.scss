@@ -1,0 +1,66 @@
+.Notification__Card {
+  padding: var(--padding_md);
+
+  margin-top: var(--mg_sm);
+  border-radius: var(--border-rad_6);
+
+  .Notification {
+    display: flex;
+    gap: var(--gap_md);
+    .Profile__Picture {
+      aspect-ratio: 1/1;
+      background-color: var(--bg_colour_white);
+      height: 50px;
+      border-radius: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .Notification__Content {
+      width: 100%;
+      .Actions {
+        width: 100%;
+        position: relative;
+        .UserName {
+          font-weight: var(--font_extrabold);
+        }
+        .Message {
+          margin: var(--mg_sm) 0px;
+          padding: var(--padding_sm);
+          border: 1px solid #dfdfdf;
+          border-radius: var(--border-rad_6);
+        }
+
+        .New {
+          display: inline-block;
+          background-color: red;
+          aspect-ratio: 1/1;
+          border-radius: 100%;
+          width: 10px;
+          margin-left: var(--mg_sm);
+        }
+        .blue {
+          color: var(--bg_colour_blue);
+        }
+        .gray {
+          opacity: 0.7;
+        }
+        &.Image {
+          display: flex;
+          justify-content: space-between;
+          gap: var(--gap_md);
+          img {
+            width: 60px;
+          }
+        }
+      }
+
+      .Time {
+        margin-top: 5px;
+        font-size: var(--font_size_xs);
+        opacity: 0.5;
+      }
+    }
+  }
+}

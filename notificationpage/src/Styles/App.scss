@@ -1,0 +1,48 @@
+.App {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  .Container {
+    background-color: var(--bg_colour_white);
+    padding: var(--padding_l);
+    border-radius: var(--border_rad_12);
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    .Header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: calc(1.5 * var(--mg_l));
+      .Header__Title {
+        display: flex;
+        align-items: center;
+        gap: var(--gap_l);
+        h2 {
+          padding: 3px 0px;
+          font-size: var(--font_size_l);
+        }
+        .Unread__Notifications {
+          padding: 3px 10px;
+          background-color: var(--bg_colour_dkblue);
+          color: var(--bg_colour_white);
+          border-radius: var(--border_rad_12);
+        }
+      }
+      .Header__Actions {
+        button {
+          font-size: var(--font_size_sm);
+          opacity: 0.7;
+          cursor: pointer;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .App {
+    background-color: var(--bg_colour_white);
+  }
+}
